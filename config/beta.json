@@ -1,0 +1,19 @@
+{
+  "server": {
+    "port": 8080
+  },
+  "gorm": {
+    "driver": "mysql",
+    "open": "root:root@tcp(dockermysql:3306)/facial_cloud?parseTime=true&charset=utf8mb4",
+    "maxIdle": 10,
+    "maxOpen": 100
+  },
+  "redis": {
+    "maxIdle": 10,
+    "network": "tcp",
+    "address": "dockerredis:6379",
+    "password": "",
+    "authKey": "beta-session",
+    "db": 1
+  }
+}

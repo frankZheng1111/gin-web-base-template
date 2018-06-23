@@ -1,0 +1,19 @@
+{
+  "server": {
+    "port": 8080
+  },
+  "gorm": {
+    "driver": "sqlite3",
+    "open": "/tmp/gin-web-base-template-test.db",
+    "maxIdle": 10,
+    "maxOpen": 100
+  },
+  "redis": {
+    "maxIdle": 10,
+    "network": "tcp",
+    "address": "127.0.0.1:6379",
+    "password": "",
+    "authKey": "test-session",
+    "db": 0
+  }
+}
